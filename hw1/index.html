@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1. Создать кнопку "Перевернуть". При клике на кнопку текст кнопки должен перевернуться и отобразиться в обратном порядке.
+2. Есть список элементов. Пользователь может добавлять новые элементы списка с текстом “Новый элемент списка” нажав на кнопку "Добавить".
+3. *Дополнительное задание: При клике на элемент списка он должен быть удален. (по желанию) -->
+
+    <div id="app">
+        <h2>{{greeting}}</h2>
+        <button @click="reverseText"
+            style="background-color: rgb(148, 148, 189); padding: 5px 20px; border-radius:15px;cursor: pointer;">{{textBtn}}</button>
+        <br>
+        <br>
+        <button style="background-color: rgb(124, 204, 184); padding: 5px 20px; border-radius:15px;cursor: pointer;"
+            @click="addListItem">добавить элемент списка</button>
+        <!--Вешаем событие на родителя, не на элемент-->
+        <ol @click="deleteElement(event)">
+            <li
+                style="background-color: rgb(190, 190, 253); padding:5px; margin-bottom: 5px; border-radius:15px; width:200px; cursor: pointer;">
+                старый
+                элемент
+                списка</li>
+            <li
+                style="background-color: rgb(253, 190, 219); padding:5px; margin-bottom: 5px; border-radius:15px; width:200px;cursor: pointer;">
+                старый
+                элемент списка</li>
+            <li
+                style="background-color: rgb(156, 231, 187); padding:5px; margin-bottom: 5px; border-radius:15px; width:200px;cursor: pointer;">
+                старый
+                элемент списка</li>
+            <li
+                style="background-color: rgb(229, 253, 190); padding:5px; margin-bottom: 5px; border-radius:15px; width:200px;cursor: pointer;">
+                старый
+                элемент списка</li>
+        </ol>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = {
+            data() {
+                return {
+                    greeting: 'hello world',
+                    textBtn: 'Переверни меня',
+                }
+            },
+            methods: {
+                reverseText() {
+                    this.textBtn = this.textBtn.split('').reverse().join('');
+                },
+                addListItem() {
+                    const list = document.querySelector('ol');
+                    list.insertAdjacentHTML('beforeend',
+                        `
+                        <li style="background-color: rgb(190, 190, 253); padding:5px; margin-bottom: 5px; border-radius:15px; width:200px;cursor: pointer;">новый элемент списка</li>
+                    `)
+                },
+                deleteElement() {
+                    console.log(event.target);
+                    event.target.remove();
+                }
+            }
+        }
+
+        Vue.createApp(app).mount("#app");
+    </script>
+</body>
+
+</html>
