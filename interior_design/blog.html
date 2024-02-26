@@ -1,0 +1,186 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32fa6dd818.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="header-content center">
+                <div class="logo"><img src="img/Logo.svg" alt="logo"> Interno</div>
+                <div class="menu">
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="#">Project</a></li>
+                        <li class="menu-item"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="blog-banner">
+            <div class="blog-banner-content">
+                <div class="blog-banner__title">Articles & News</div>
+                <div class="blog-banner__text">Home / Blog</div>
+            </div>
+        </section>
+
+
+
+        <!--Стили скопированы с первой страницы-->
+        <section class="articles-section">
+
+            <div class="latest center">
+                <h3 class="articles-title">Latest post</h3>
+                <div class="latest-content">
+                    <div class="latest__image">
+                        <img src="img/blog/Photo-main.png" alt="photo">
+                    </div>
+                    <div class="latest__descr">
+                        <div class="latest__heading">Low Cost Latest Invented Interior Designing Ideas</div>
+                        <p class="latest__text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis
+                            dignissim
+                            maximus.posuere in.Contrary to popular belief. </p>
+                        <p class="latest__text">Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classica.
+                        </p>
+                        <div class="data-and-btn">
+                            <div class="date">26 December 2022</div>
+                            <button class="blog-btn"><img src="img/arrow-small.svg" alt=""></button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="articles-content center">
+                <h3 class="articles-title">Articles & News</h3>
+                <ul class="articles">
+                    <li v-for="article in articlesData" :key="article.id">
+                        <div class="blog">
+
+                            <div class="blog__img"><img :src="article.img" alt="photo"></div>
+
+                            <div class="blog-title">
+                                {{article.text}}</div>
+                            <div class="data-and-btn">
+                                <div class="date">{{article.date}}</div>
+                                <button class="blog-btn"><img src="img/arrow-small.svg" alt=""></button>
+                            </div>
+                    </li>
+                </ul>
+        </section>
+        <section class="circles-section">
+            <div class="circles center">
+                <div class="circle">01</div>
+                <div class="circle">02</div>
+                <div class="circle">03</div>
+                <div class="circle">04</div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content center">
+                <div class="logos">
+                    <div class="logo"><img src="img/Logo.svg" alt="logo"> Interno</div>
+
+                    <div class="logos-text">It is a long established fact that a reader<br> will be distracted
+                        lookings
+                    </div>
+                    <div class="icons">
+                        <a target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i> </a>
+
+
+                    </div>
+                </div>
+                <div class="menu-pages">
+                    <ul>Pages
+                        <li><a class="footer-menu-link" href="#">Home</a></li>
+                        <li><a class="footer-menu-link" href="#">Project</a></li>
+                        <li><a class="footer-menu-link" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contacts-title">Contact</div>
+                    <p class="contacts-text">55 East Birchwood Ave.<br> Brooklyn, New York 11201</p>
+                    <p class="contacts-text">contact@interno.com
+                    </p>
+                    <p class="contacts-text">(123) 456 - 7890</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = {
+            data() {
+                return {
+                    heading: "кукусики",
+                    articlesData: [
+                        {
+                            id: 1,
+                            img: "img/blog/Photo1.png",
+                            text: "Let’s Get Solution For Building Construction Work",
+                            date: "26 December 2022",
+
+                        },
+                        {
+                            id: 2,
+                            img: "img/blog/Photo2.png",
+                            text: "Low Cost Latest Invented Interior Designing Ideas.",
+                            date: "22 December 2022",
+
+                        },
+                        {
+                            id: 3,
+                            img: "img/blog/Photo3.png",
+                            text: "Best For Any Office & Business Interior Solution",
+                            date: "25 December 2022",
+
+                        },
+                        {
+                            id: 4,
+                            img: "img/blog/Photo4.png",
+                            text: "Let’s Get Solution For Building Construction Work",
+                            date: "22 December 2022",
+
+                        },
+                        {
+                            id: 5,
+                            img: "img/blog/Photo5.png",
+                            text: "Low Cost Latest Invented Interior Designing Ideas.",
+                            date: "26 December 2022",
+
+                        },
+                        {
+                            id: 6,
+                            img: "img/blog/Photo6.png",
+                            text: "Best For Any Office & Business Interior Solution",
+                            date: "22 December 2022",
+
+                        },
+                    ]
+                }
+            },
+        }
+        Vue.createApp(app).mount("#app");
+    </script>
+</body>
+
+</html>

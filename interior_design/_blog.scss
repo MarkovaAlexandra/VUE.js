@@ -1,0 +1,121 @@
+.blog-banner {
+    background-image: url('img/blog/banner-blog.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 356px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 200px;
+
+    &__title {
+        font-family: DM Serif Display;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 63px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    &__text {
+        font-family: Jost;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        text-align: left;
+
+    }
+}
+
+.blog-banner-content {
+    background-color: #FFF;
+    padding: 41px 78px;
+
+}
+
+//--------------------
+
+.articles-section {
+    margin-bottom: 51px;
+}
+
+.latest-content {
+    display: flex;
+    margin-bottom: 150px;
+    justify-content: space-between;
+}
+
+.latest__descr {
+    width: 50%;
+    display: flex;
+    display: flex;
+    gap: 27px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.latest__image img {
+    width: 505;
+    border-radius: 30px;
+}
+
+.latest__heading {
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $black;
+
+}
+
+.latest__text {
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+
+//---------articles---------
+.articles-title {
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $black;
+    margin-bottom: 27px;
+
+}
+
+//эти кружки надо будет заменить чем-то функциональным
+.circles-section {
+    margin-bottom: 200px;
+}
+
+.circles {
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+.circle {
+    background-color: $ligth_grey_pink;
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid $gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//добавить адаптив

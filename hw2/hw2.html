@@ -1,0 +1,78 @@
+<!-- Вы разрабатываете приложение для отображения и сортировки списка товаров. У вас есть массив объектов products, где каждый объект представляет товар с его названием и ценой. Вам необходимо отобразить список товаров и предоставить пользователю возможность сортировать товары по цене (по возрастанию и по убыванию). -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32fa6dd818.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h2>{{heading}}</h2>
+        <p>Отсортировать товары по цене:</p>
+        <button @click="sortUp"><i class="fa-solid fa-arrow-up"></i></button>
+        <button @click="sortDown"><i class="fa-solid fa-arrow-down"></i></button>
+        <ul>
+            <li v-for="product in products" :key="product.id">{{product.name}} - {{product.price}}</li>
+        </ul>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = {
+            data() {
+                return {
+                    heading: "Товары",
+                    products: [
+                        {
+                            id: 1,
+                            name: 'Молоко Домик в деревне',
+                            price: 100,
+                        },
+                        {
+                            id: 2,
+                            name: 'Молоко Домик в горах',
+                            price: 170,
+                        },
+                        {
+                            id: 3,
+                            name: 'Молоко Домик в селе',
+                            price: 90,
+                        },
+                        {
+                            id: 4,
+                            name: 'Молоко Домик в лесу',
+                            price: 120,
+                        },
+                        {
+                            id: 5,
+                            name: 'Молоко Домик на море',
+                            price: 200,
+                        }
+
+                    ]
+                }
+            },
+            methods: {
+                sortUp(products) {
+                    this.products = this.products.sort((a, b) => a.price - b.price);
+                },
+                sortDown(products) {
+                    this.products = this.products.sort((a, b) => b.price - a.price);
+                }
+            },
+        }
+
+        Vue.createApp(app).mount("#app");
+    </script>
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'blog';
 
 body {
     font-family: "DM Serif Display", serif;
@@ -255,7 +256,8 @@ img {
 
 //--------------blogs----------
 
-.blogs-items {
+.blogs-items,
+.articles {
     margin-top: 52px;
     display: grid;
     grid-template-columns: 32% 32% 32%;

@@ -1,3 +1,111 @@
+.blog-banner {
+  background-image: url("img/blog/banner-blog.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 356px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.blog-banner__title {
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.blog-banner__text {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.blog-banner-content {
+  background-color: #FFF;
+  padding: 41px 78px;
+}
+
+.articles-section {
+  margin-bottom: 51px;
+}
+
+.latest-content {
+  display: flex;
+  margin-bottom: 150px;
+  justify-content: space-between;
+}
+
+.latest__descr {
+  width: 50%;
+  display: flex;
+  display: flex;
+  gap: 27px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.latest__image img {
+  width: 505;
+  border-radius: 30px;
+}
+
+.latest__heading {
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #292F36;
+}
+
+.latest__text {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.articles-title {
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #292F36;
+  margin-bottom: 27px;
+}
+
+.circles-section {
+  margin-bottom: 200px;
+}
+
+.circles {
+  display: flex;
+  margin-bottom: 200px;
+  justify-content: center;
+}
+
+.circle {
+  background-color: #F4F0EC;
+  width: 52px;
+  height: 52px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 1px solid #CDA274;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
@@ -219,7 +327,8 @@ img {
   color: #292F36;
 }
 
-.blogs-items {
+.blogs-items,
+.articles {
   margin-top: 52px;
   display: grid;
   grid-template-columns: 32% 32% 32%;
