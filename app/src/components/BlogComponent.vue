@@ -4,8 +4,8 @@
 
         </section>
 
-        <section class="articles">
-            <div class="articles-content center">
+        <section class="articles-tags-section">
+            <div class="articles-tags-content center">
                 <div class="articles-box">
                     <div v-if="articlesChoosen.length == 0" class="emptyResult">Пока ничего нет, попробуйте выбрать другой
                         тег</div>
@@ -105,7 +105,7 @@ export default {
     },
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 .blog-banner {
     height: 351px;
     background: url("@/assets/imgInterior/blog-banner.jpg");
@@ -120,7 +120,7 @@ export default {
     text-align: left;
 }
 
-.articles-content {
+.articles-tags-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 96px;

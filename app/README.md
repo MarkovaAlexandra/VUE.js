@@ -17,3 +17,9 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### доделать
+как-то надо подключить стили единым файлом
+шрифты и иконочные шрифты подключить
+

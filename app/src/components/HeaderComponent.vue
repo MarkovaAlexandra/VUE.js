@@ -78,6 +78,7 @@ img {
 .menu-items {
     display: flex;
     gap: 60px;
+    list-style-type: none;
 }
 
 .menu-item a {
@@ -89,7 +90,7 @@ img {
     letter-spacing: 0em;
     text-align: center;
     color: #292F36;
-    ;
+    text-decoration: none;
 
 
 }

@@ -46,8 +46,13 @@ export default {
 
 
 <style>
+.footer {
+    margin-top: 96px;
+    margin-bottom: 134px;
+}
+
 .footer-content {
-    padding: 96px 0 134px 0;
+
     display: flex;
     justify-content: space-between;
 }
