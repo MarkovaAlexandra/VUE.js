@@ -28,7 +28,7 @@ export default {
 
 <style>
 body {
-    font-family: "DM Serif Display", serif;
+    font-family: dm_serif_displayregular;
     font-weight: 400;
     font-style: normal;
 }
@@ -62,7 +62,7 @@ img {
 }
 
 .logo {
-    font-family: DM Serif Display;
+    font-family: dm_serif_displayregular;
     font-size: 40px;
     font-weight: 400;
     line-height: 50px;

@@ -1,9 +1,9 @@
 <template>
     <div>
-        <section class="blog-banner">
-            <div class="blog-banner-content">
-                <div class="blog-banner__title">Articles & News</div>
-                <div class="blog-banner__text">Home / Blog</div>
+        <section class="page-banner">
+            <div class="page-banner-content">
+                <div class="page-banner__title">Articles & News</div>
+                <div class="page-banner__text">Home / Blog</div>
             </div>
         </section>
 
@@ -128,43 +128,10 @@ export default {
 
 
 
-<style lang="scss">
-.blog-banner {
+<style lang="scss" scoped>
+//смтили для секции баннер в общем файле scss
+.page-banner {
     background-image: url('@/assets/imgInterior/blog/banner-blog.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 356px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 200px;
-
-    &__title {
-        font-family: DM Serif Display;
-        font-size: 50px;
-        font-weight: 400;
-        line-height: 63px;
-        letter-spacing: 0em;
-        text-align: left;
-
-    }
-
-    &__text {
-        font-family: Jost;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 33px;
-        letter-spacing: 0.01em;
-        text-align: left;
-
-    }
-}
-
-.blog-banner-content {
-    background-color: #FFF;
-    padding: 41px 78px;
-    border-top-left-radius: 37px;
-    border-top-right-radius: 37px;
 
 }
 
@@ -195,7 +162,7 @@ export default {
 }
 
 .latest__heading {
-    font-family: DM Serif Display;
+    font-family: dm_serif_displayregular;
     font-size: 25px;
     font-weight: 400;
     line-height: 31px;
@@ -217,7 +184,7 @@ export default {
 
 //---------articles---------
 .articles-title {
-    font-family: DM Serif Display;
+    font-family: dm_serif_displayregular;
     font-size: 50px;
     font-weight: 400;
     line-height: 63px;
@@ -229,25 +196,5 @@ export default {
 }
 
 //эти кружки надо будет заменить чем-то функциональным
-.circles-section {
-    margin-bottom: 200px;
-}
-
-.circles {
-    display: flex;
-    margin-bottom: 200px;
-    justify-content: center;
-}
-
-.circle {
-    background-color: #F4F0EC;
-    width: 52px;
-    height: 52px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border: 1px solid #CDA274;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+//стили кружков в общем sccs файле
 </style>

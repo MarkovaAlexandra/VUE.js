@@ -135,7 +135,8 @@ export default {
 }
 
 .tags-heading {
-    font-family: DM Serif Display;
+    font-family: dm_serif_displayregular;
+
     font-size: 25px;
     font-weight: 400;
     line-height: 31px;

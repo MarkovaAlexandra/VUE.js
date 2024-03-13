@@ -8,7 +8,8 @@
                     <div class="logos-text">It is a long established fact that a reader<br> will be distracted lookings
                     </div>
                     <div class="icons">
-                        <a target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.twitter.com"><i
+                                class="fa-brands fa-twitter"></i><font-awesome-icon :icon="['fab', 'twitter']" /></a>
                         <a target="_blank" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i> </a>
 
 
@@ -31,6 +32,8 @@
             </div>
         </footer>
     </div>
+
+   
 </template>
 
 
@@ -90,7 +93,8 @@ export default {
 .menu-pages {
     width: 33%;
     padding-left: 8%;
-    font-family: DM Serif Display;
+    font-family: dm_serif_displayregular;
+
     font-size: 25px;
     font-weight: 400;
     line-height: 31px;
@@ -119,14 +123,14 @@ export default {
 }
 
 .contacts-title {
-    font-family: DM Serif Display;
+    font-family: 'dm_serif_displayregular';
     font-size: 25px;
     font-weight: 400;
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
     color: #292F36;
-    ;
+
     margin-bottom: 26px;
 
 }

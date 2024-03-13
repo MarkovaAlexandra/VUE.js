@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'dm_serif_displayregular';
+    src: url(' @/assets/fonts/dmserifdisplay-regular-webfont.woff2') format('woff2'),
+        url('@/assets/fonts/dmserifdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Jost';
+    src: url('@/assets/fonts/jost-variablefont_wght-webfont.woff2') format('woff2'),
+        url('@/assets/fonts/jost-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//стили для баннера на странице блог и проекты
+.page-banner {
+
+    min-height: 356px;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 200px;
+
+    &__title {
+        font-family: dm_serif_displayregular;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 63px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    &__menu {
+        font-family: Jost;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        text-align: left;
+
+    }
+}
+
+.page-banner-content {
+    background-color: #FFF;
+    padding: 41px 78px;
+    border-top-left-radius: 37px;
+    border-top-right-radius: 37px;
+}
+
+// недопагинация - кружки
+.circles-section {
+    margin-bottom: 200px;
+}
+
+.circles {
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+.circle {
+    background-color: #F4F0EC;
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #CDA274;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

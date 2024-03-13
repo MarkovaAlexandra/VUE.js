@@ -83,6 +83,7 @@ export default {
 <style lang="scss">
 .banner-content {
     background-image: url('@/assets/imgInterior/Banner.png');
+    min-height: 356px;
     padding: 208px 0px 208px 52px;
     background-size: cover;
     background-position: center;
@@ -150,7 +151,7 @@ export default {
     margin: 0 auto;
 
     &_title {
-        font-family: DM Serif Display;
+        font-family: dm_serif_displayregular;
         font-size: 50px;
         font-weight: 400;
         line-height: 63px;
@@ -191,7 +192,7 @@ export default {
     }
 
     &__title {
-        font-family: DM Serif Display;
+        font-family: dm_serif_displayregular;
         font-size: 25px;
         font-weight: 400;
         line-height: 31px;

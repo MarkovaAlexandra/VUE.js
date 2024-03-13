@@ -16,6 +16,10 @@
   <HeaderComponent />
   <BlogComponent />
   <FooterComponent />
+  <hr>
+  <HeaderComponent />
+  <OurProjectsComponent />
+  <FooterComponent />
 </template>
 
 <script>
@@ -28,10 +32,14 @@ import BlogComponent from './components/BlogComponent.vue';
 import CountsComponent from './components/CountsComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
+import OurProjectsComponent from './components/OurProjectsComponent.vue';
 import ProjectsComponent from './components/ProjectsComponent.vue';
 
+
+
+
 export default {
-  components: { HeaderComponent, BlogComponent, FooterComponent, ProjectsComponent, CountsComponent, ArticlesNewsHomeComponent, ArticlesNewsFullComponent }
+  components: { HeaderComponent, BlogComponent, FooterComponent, ProjectsComponent, CountsComponent, ArticlesNewsHomeComponent, ArticlesNewsFullComponent, OurProjectsComponent }
 }
 </script>
 

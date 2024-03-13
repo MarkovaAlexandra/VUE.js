@@ -78,10 +78,6 @@ export default {
     margin-bottom: 28px;
     position: relative;
     transition: background-color 0.3s;
-
-
-
-
 }
 
 
@@ -97,7 +93,7 @@ export default {
 
 .blog-title {
     flex: 1;
-    font-family: DM Serif Display;
+    font-family: dm_serif_displayregular;
     font-size: 25px;
     font-weight: 400;
     line-height: 31px;

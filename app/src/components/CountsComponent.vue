@@ -54,7 +54,8 @@
 }
 
 .count-number {
-    font-family: DM Serif Display;
+    font-family: dm_serif_displayregular;
+
     font-size: 85px;
     font-weight: 400;
     line-height: 106px;
