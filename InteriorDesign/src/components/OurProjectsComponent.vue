@@ -165,6 +165,8 @@ export default {
             console.log(this.projectsChoosen);
         },
 
+
+
     }
 }
 </script>

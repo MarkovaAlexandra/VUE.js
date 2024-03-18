@@ -20,6 +20,10 @@
   <HeaderComponent />
   <OurProjectsComponent />
   <FooterComponent />
+  <hr>
+  <HeaderComponent />
+  <ProjectDetailsComponent />
+  <FooterComponent />
 </template>
 
 <script>
@@ -33,13 +37,14 @@ import CountsComponent from './components/CountsComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 import OurProjectsComponent from './components/OurProjectsComponent.vue';
+import ProjectDetailsComponent from './components/ProjectDetailsComponent.vue';
 import ProjectsComponent from './components/ProjectsComponent.vue';
 
 
 
 
 export default {
-  components: { HeaderComponent, BlogComponent, FooterComponent, ProjectsComponent, CountsComponent, ArticlesNewsHomeComponent, ArticlesNewsFullComponent, OurProjectsComponent }
+  components: { HeaderComponent, BlogComponent, FooterComponent, ProjectsComponent, CountsComponent, ArticlesNewsHomeComponent, ArticlesNewsFullComponent, OurProjectsComponent, ProjectDetailsComponent }
 }
 </script>
 
