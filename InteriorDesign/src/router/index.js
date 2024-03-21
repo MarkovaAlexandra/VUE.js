@@ -4,6 +4,7 @@ import BlogPageComponent from "@/components/BlogPageComponent.vue";
 import ProjectPageComponent from "@/components/ProjectPageComponent.vue";
 import ProjectDetailsComponent from "@/components/ProjectDetailsComponent.vue";
 import BlogComponent from "@/components/BlogComponent.vue";
+import NotFoundComponent from '@/components/NotFoundComponent.vue';
 
 
 
@@ -32,6 +33,11 @@ const routes = [
         path: "/blog/details",
         name: "BlogDetails",
         component: BlogComponent,
+    },
+    {
+        path: "/:CatchAll(.*)",
+        name: 'NotFoundPage',
+        component: NotFoundComponent,
     }
 ];
 const router = createRouter({
