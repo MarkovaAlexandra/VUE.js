@@ -69,7 +69,25 @@ export default {
                 },
 
             ],
-            articlesChoosen: [],
+            articlesChoosen: [
+            {
+                    id: 3,
+                    tag: 'Kids',
+                    title: 'Статья про детскую',
+                    img: require('@/assets/imgInterior/kids.jpg'),
+                    text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur expedita blanditiis eligendi officiis quod ut ipsa odio nisi corporis similique incidunt quia beatae sapiente deleniti quisquam, eius architecto hic fuga pariatur, repudiandae, delectus alias amet voluptates? Dolor suscipit adipisci laborum dolorum facilis quidem deleniti repellendus, sequi consequuntur deserunt libero!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur expedita blanditiis eligendi officiis quod ut ipsa odio nisi corporis similique incidunt quia beatae sapiente deleniti quisquam, eius architecto hic fuga pariatur, repudiandae, delectus alias amet voluptates? Dolor suscipit adipisci laborum dolorum facilis quidem deleniti repellendus, sequi consequuntur deserunt libero!`
+
+                },
+                {
+                    id: 3,
+                    tag: 'Kids',
+                    title: 'Другая статья про детскую',
+                    img: require('@/assets/imgInterior/kids2.jpg'),
+                    text: ` Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur expedita blanditiis eligendi officiis quod ut ipsa odio nisi corporis similique incidunt quia beatae sapiente deleniti quisquam, eius architecto hic fuga pariatur, repudiandae, delectus alias amet voluptates? Dolor suscipit adipisci laborum dolorum facilis quidem deleniti repellendus, sequi consequuntur deserunt libero!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur expedita blanditiis eligendi officiis quod ut ipsa odio nisi corporis similique incidunt quia beatae sapiente deleniti quisquam, eius architecto hic fuga pariatur, repudiandae, delectus alias amet voluptates? Dolor suscipit adipisci laborum dolorum facilis quidem deleniti repellendus, sequi consequuntur deserunt libero!`
+
+                },
+            ],
             tags: [
                 {
                     id: 1,

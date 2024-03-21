@@ -17,9 +17,9 @@
                 </div>
                 <div class="menu-pages">
                     <ul>Pages
-                        <li><a class="footer-menu-link" href="#">Home</a></li>
-                        <li><a class="footer-menu-link" href="#">Project</a></li>
-                        <li><a class="footer-menu-link" href="#">Blog</a></li>
+                        <li v-for="link in links" :key="link.id"><router-link :to="link.url" class="footer-menu-link">{{
+                            link.title }}</router-link> </li>
+
                     </ul>
                 </div>
                 <div class="contacts">
@@ -32,8 +32,6 @@
             </div>
         </footer>
     </div>
-
-   
 </template>
 
 
@@ -42,6 +40,23 @@ export default {
     data() {
         return {
             logo: require("@/assets/imgInterior/Logo.svg"),
+            links: [
+                {
+                    id: 1,
+                    title: 'Home',
+                    url: '/',
+                },
+                {
+                    id: 2,
+                    title: 'Blog',
+                    url: '/blog',
+                },
+                {
+                    id: 3,
+                    title: 'Projects',
+                    url: '/projects',
+                },
+            ]
         }
     },
 }

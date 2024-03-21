@@ -47,7 +47,8 @@
                                 {{ article.text }}</div>
                             <div class="data-and-btn">
                                 <div class="date">{{ article.date }}</div>
-                                <button class="blog-btn"><img :src=arrow_small alt=""></button>
+                                <button class="blog-btn"><router-link :to="article.url"><img :src=arrow_small
+                                            alt="follow link"></router-link></button>
                             </div>
                         </div>
                     </li>
@@ -82,6 +83,7 @@ export default {
                     img: require('@/assets/imgInterior/blog/Photo1.png'),
                     text: `Let's Get Solution For Building Construction Work`,
                     date: "26 December 2022",
+                    url: '/blog/details'
 
                 },
                 {
@@ -89,6 +91,7 @@ export default {
                     img: require('@/assets/imgInterior/blog/Photo2.png'),
                     text: "Low Cost Latest Invented Interior Designing Ideas.",
                     date: "22 December 2022",
+                    url: '/blog/details'
 
                 },
                 {
@@ -96,6 +99,7 @@ export default {
                     img: require('@/assets/imgInterior/blog/Photo3.png'),
                     text: "Best For Any Office & Business Interior Solution",
                     date: "25 December 2022",
+                    url: '/blog/details'
 
                 },
                 {
@@ -103,6 +107,7 @@ export default {
                     img: require('@/assets/imgInterior/blog/Photo4.png'),
                     text: "Let's Get Solution For Building Construction Work",
                     date: "22 December 2022",
+                    url: '/blog/details'
 
                 },
                 {
@@ -110,6 +115,7 @@ export default {
                     img: require('@/assets/imgInterior/blog/Photo5.png'),
                     text: "Low Cost Latest Invented Interior Designing Ideas.",
                     date: "26 December 2022",
+                    url: '/blog/details'
 
                 },
                 {
@@ -117,6 +123,7 @@ export default {
                     img: require('@/assets/imgInterior/blog/Photo6.png'),
                     text: "Best For Any Office & Business Interior Solution",
                     date: "22 December 2022",
+                    url: '/blog/details'
 
                 },
             ]

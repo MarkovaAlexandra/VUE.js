@@ -26,7 +26,8 @@
                         <div class="project-item__title">{{ project.title }}</div>
                         <div class="project-item__text">{{ project.text }}</div>
                     </div>
-                    <button class="blog-btn"><img :src=arrow_small alt="arrow"></button>
+                    <button class="blog-btn"><router-link :to="project.url"><img :src=arrow_small
+                                alt="arrow"></router-link></button>
                 </div>
             </div>
         </section>
@@ -64,61 +65,127 @@ export default {
                     name: 'Living Area',
                 },
             ],
-            projectsChoosen: [],
-            projects: [
+            projectsChoosen: [
                 {
                     id: 1,
                     image: require('@/assets/imgInterior/projects/Imagebedroom_1.jpg'),
                     title: 'Minimal Bedroom',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 2,
                     image: require('@/assets/imgInterior/projects/Imagebedroom_2.jpg'),
                     title: 'Minimal Bedroom',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 3,
                     image: require('@/assets/imgInterior/projects/Imagebedroom_3.jpg'),
                     title: ' Classic Minimal Bedroom',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 4,
                     image: require('@/assets/imgInterior/projects/Imagebedroom_4.jpg'),
                     title: 'Modern Bedroom',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 5,
                     image: require('@/assets/imgInterior/projects/Imagebedroom_5.jpg'),
                     title: 'Minimal Bedroom Table',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 6,
                     image: require('@/assets/imgInterior/projects/Imagebedroom_6.jpg'),
                     title: 'Sysytem Bedroom Table',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 7,
                     image: require('@/assets/imgInterior/projects/Imagebedroom_7.jpg'),
                     title: ' Modern Bedroom',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 8,
                     image: require('@/assets/imgInterior/projects/Imagebedroom_8.jpg'),
                     title: 'Modern Bedroom',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
+                },
+            ],
+            projects: [
+                {
+                    id: 1,
+                    image: require('@/assets/imgInterior/projects/Imagebedroom_1.jpg'),
+                    title: 'Minimal Bedroom',
+                    text: 'Decor / Artchitecture',
+                    url: '/project/details'
+                },
+                {
+                    id: 2,
+                    image: require('@/assets/imgInterior/projects/Imagebedroom_2.jpg'),
+                    title: 'Minimal Bedroom',
+                    text: 'Decor / Artchitecture',
+                    url: '/project/details'
+                },
+                {
+                    id: 3,
+                    image: require('@/assets/imgInterior/projects/Imagebedroom_3.jpg'),
+                    title: ' Classic Minimal Bedroom',
+                    text: 'Decor / Artchitecture',
+                    url: '/project/details'
+                },
+                {
+                    id: 4,
+                    image: require('@/assets/imgInterior/projects/Imagebedroom_4.jpg'),
+                    title: 'Modern Bedroom',
+                    text: 'Decor / Artchitecture',
+                    url: '/project/details'
+                },
+                {
+                    id: 5,
+                    image: require('@/assets/imgInterior/projects/Imagebedroom_5.jpg'),
+                    title: 'Minimal Bedroom Table',
+                    text: 'Decor / Artchitecture',
+                    url: '/project/details'
+                },
+                {
+                    id: 6,
+                    image: require('@/assets/imgInterior/projects/Imagebedroom_6.jpg'),
+                    title: 'Sysytem Bedroom Table',
+                    text: 'Decor / Artchitecture',
+                    url: '/project/details'
+                },
+                {
+                    id: 7,
+                    image: require('@/assets/imgInterior/projects/Imagebedroom_7.jpg'),
+                    title: ' Modern Bedroom',
+                    text: 'Decor / Artchitecture',
+                    url: '/project/details'
+                },
+                {
+                    id: 8,
+                    image: require('@/assets/imgInterior/projects/Imagebedroom_8.jpg'),
+                    title: 'Modern Bedroom',
+                    text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 9,
                     image: require('@/assets/imgInterior/kids.jpg'),
                     title: 'Living Area',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 // {
                 // id: 10,
@@ -131,24 +198,28 @@ export default {
                     image: require('@/assets/imgInterior/living_design_2.jpg'),
                     title: 'Modern Living Area',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 12,
                     image: require('@/assets/imgInterior/living_design_3.jpg'),
                     title: 'Modern Living Area',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 13,
                     image: require('@/assets/imgInterior/bathroom_1.jpg'),
                     title: 'Modern Bathroom',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
                 {
                     id: 14,
                     image: require('@/assets/imgInterior/bathroom_2.jpg'),
                     title: 'Modern Bathroom',
                     text: 'Decor / Artchitecture',
+                    url: '/project/details'
                 },
 
             ]

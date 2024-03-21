@@ -1,8 +1,7 @@
 <template>
-  <!-- <HelloComponent />
-  <FotoComponent />
-  <ProductComponent /> -->
   <HeaderComponent />
+  <FooterComponent />
+  <!--
   <ProjectsComponent />
   <CountsComponent />
   <ArticlesNewsHomeComponent />
@@ -23,28 +22,35 @@
   <hr>
   <HeaderComponent />
   <ProjectDetailsComponent />
-  <FooterComponent />
+  <FooterComponent /> -->
+
+  <!-- <NavComponent /> -->
+  <!-- <RouterView /> -->
+  <!-- <RouterView /> -->
 </template>
 
 <script>
-// import HelloComponent from './components/HelloComponent.vue';
-// import FotoComponent from './components/FotoComponent.vue';
-// import ProductComponent from './components/ProductComponent.vue';
-import ArticlesNewsFullComponent from './components/ArticlesNewsFullComponent.vue';
-import ArticlesNewsHomeComponent from './components/ArticlesNewsHomeComponent.vue';
-import BlogComponent from './components/BlogComponent.vue';
-import CountsComponent from './components/CountsComponent.vue';
+
+// import ArticlesNewsFullComponent from './components/ArticlesNewsFullComponent.vue';
+// import ArticlesNewsHomeComponent from './components/ArticlesNewsHomeComponent.vue';
+// import BlogComponent from './components/BlogComponent.vue';
+// import CountsComponent from './components/CountsComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
-import OurProjectsComponent from './components/OurProjectsComponent.vue';
-import ProjectDetailsComponent from './components/ProjectDetailsComponent.vue';
-import ProjectsComponent from './components/ProjectsComponent.vue';
+// import OurProjectsComponent from './components/OurProjectsComponent.vue';
+// import ProjectDetailsComponent from './components/ProjectDetailsComponent.vue';
+// import ProjectsComponent from './components/ProjectsComponent.vue';
+// import NavComponent from './components/NavComponent.vue';
 
 
 
 
 export default {
-  components: { HeaderComponent, BlogComponent, FooterComponent, ProjectsComponent, CountsComponent, ArticlesNewsHomeComponent, ArticlesNewsFullComponent, OurProjectsComponent, ProjectDetailsComponent }
+  components: {
+    HeaderComponent, FooterComponent,
+    //BlogComponent,  ProjectsComponent, CountsComponent, ArticlesNewsHomeComponent, ArticlesNewsFullComponent, OurProjectsComponent, ProjectDetailsComponent 
+    // NavComponent,
+  }
 }
 </script>
 

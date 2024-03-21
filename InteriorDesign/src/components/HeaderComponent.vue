@@ -5,13 +5,14 @@
                 <div class="logo"><img :src=logo alt="logo"> Interno</div>
                 <div class="menu">
                     <ul class="menu-items">
-                        <li class="menu-item"><a href="#">Home</a></li>
-                        <li class="menu-item"><a href="#">Project</a></li>
-                        <li class="menu-item"><a href="blog.html">Blog</a></li>
+                        <li v-for="link in links" :key="link.id" class="menu-item">
+                            <router-link :to="link.url">{{ link.title }}</router-link>
+                        </li>
+
                     </ul>
                 </div>
             </div>
-
+            <RouterView />
         </header>
     </div>
 </template>
@@ -20,10 +21,28 @@
 export default {
     data() {
         return {
-            logo: require("@/assets/imgInterior/Logo.svg")
+            logo: require("@/assets/imgInterior/Logo.svg"),
+            links: [
+                {
+                    id: 1,
+                    title: 'Home',
+                    url: '/',
+                },
+                {
+                    id: 2,
+                    title: 'Blog',
+                    url: '/blog',
+                },
+                {
+                    id: 3,
+                    title: 'Projects',
+                    url: '/projects',
+                },
+            ]
         }
-    },
+    }
 }
+
 </script>
 
 <style>
@@ -81,7 +100,7 @@ img {
     list-style-type: none;
 }
 
-.menu-item a {
+.menu-item {
     display: block;
     font-family: Jost;
     font-size: 20px;
